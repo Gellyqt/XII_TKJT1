@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XII Teknik Komputer Jaringan 1 - SMEKTA</title>
+        <link rel="icon" type="image/png" href="foto/TKJ-removebg-preview.png" sizes="32x32">
+</head>
+
+<body>
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-content">
+            <!-- Logo (gunakan gambar atau ikon rumah dari FontAwesome) -->
+            <img src="foto/TKJ-removebg-preview.png" alt="Logo" class="logo">
+            <!-- Teks sambutan dengan gradien biru-putih -->
+            <div class="welcome-text">TEKNIK KOMPUTER DAN JARINGAN</div>
+            <a href="javascript:void(0)" class="continue-button" onclick="removeWelcomeScreen()">Lanjutkan</a>
+        </div>
+    </div>
+
+     
+    <div id="main-welcome" class="main-welcome">
+        <div class="logo-container">
+            <img src="foto/smkr.png" alt="Logo" class="logo">
+            <h2>SMK NEGERI TAMBAKBOYO</h2>
+        </div>
+    </div>
+
+    
+    <!-- Header -->
+    <header>
+     
+        <div>
+            <h1>XII TEKNIK KOMPUER JARINGAN 1</h1>
+            <p>Selamat datang di halaman kelas kami!</p>
+            <p>Tahun ajaran 2024-2025</p>
+        </div>
+        
+    </header>
+  
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <a onclick="showSection('home')">
+            <i class="fas fa-house-user"></i>
+        </a>
+        <a onclick="showSection('data-siswa')">Data Siswa</a>
+        <a onclick="showSection('data-guru')">Data Guru</a>
+        <a onclick="showSection('struktur-kelas')">Struktur Kelas</a>
+        <a onclick="showSection('daftar-piket')">Daftar Piket</a>
+        <a onclick="showSection('jadwal-pelajaran')">Jadwal Pelajaran</a>
+        <a onclick="showSection('kegiatan-kelas')">Kegiatan Kelas</a>
+        <a onclick="showSection('gallery-foto')" >Gallery Foto</a>
+        <a href="https://www.instagram.com/famoits_one" target="_blank" style="margin-left: 15px;">
+            <i class="fab fa-instagram" style="color: white; font-size: 20px;"></i>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    
+        <div id="results-container"></div>
+        <section id="home"  class="section">
+            <h1>Selamat Datang di Teknik Jaringan dan Komputer</h1>
+            <p>
+                Teknik Jaringan dan Komputer adalah sebuah program studi yang mengajarkan siswa tentang dasar-dasar serta 
+                penerapan teknologi jaringan komputer dan sistem informasi. Program ini mempersiapkan siswa untuk menjadi ahli 
+                dalam merancang, mengelola, dan mengoptimalkan jaringan komputer baik dalam skala kecil maupun besar, serta 
+                membekali mereka dengan keterampilan dalam pemrograman dan administrasi sistem komputer.
+            </p>
+            <h2>Tujuan Program</h2>
+            <p>
+                Program studi Teknik Jaringan dan Komputer bertujuan untuk membekali para lulusannya dengan kemampuan teknis dan 
+                pengetahuan yang diperlukan untuk bekerja di bidang teknologi informasi. Lulusan diharapkan mampu merancang, 
+                membangun, dan memelihara jaringan komputer yang efektif, aman, dan efisien, serta mampu mengatasi berbagai 
+                tantangan teknis yang dihadapi oleh organisasi atau perusahaan.
+            </p>
+        
+            <h2>Kompetensi yang Diperoleh</h2>
+            <ul>
+                <li>Desain dan implementasi jaringan komputer lokal (LAN) dan jaringan area luas (WAN).</li>
+                <li>Pemrograman dan pengelolaan perangkat keras dan perangkat lunak sistem komputer.</li>
+                <li>Manajemen dan pengelolaan server, baik untuk aplikasi jaringan maupun untuk penyimpanan data.</li>
+                <li>Keamanan jaringan dan data untuk melindungi informasi dan sumber daya organisasi.</li>
+                <li>Penggunaan perangkat lunak administrasi sistem dan pemrograman tingkat lanjut.</li>
+            </ul>
+        
+            <h2>Prospek Karir</h2>
+            <p>
+                Lulusan dari program Teknik Jaringan dan Komputer dapat bekerja di berbagai bidang, antara lain:
+            </p>
+            <ul>
+                <li>Administrator Jaringan</li>
+                <li>Network Engineer</li>
+                <li>Security Analyst</li>
+                <li>Teknisi Jaringan</li>
+                <li>IT Support Specialist</li>
+                <li>Cloud Computing Specialist</li>
+            </ul>
+            
+            <h2>Kenapa Memilih Teknik Jaringan dan Komputer?</h2>
+            <p>
+                Dalam dunia yang semakin terhubung, kebutuhan akan tenaga ahli di bidang jaringan dan komputer semakin meningkat. 
+                Dengan memilih program studi Teknik Jaringan dan Komputer, Anda akan dibekali dengan keterampilan dan pengetahuan 
+                yang sangat dibutuhkan di dunia kerja. Anda akan memiliki kesempatan untuk bekerja dengan teknologi terbaru dan 
+                berkontribusi pada pengembangan infrastruktur TI yang mendukung berbagai sektor industri.
+            </p>
+        </section>
+        <!-- Data Siswa -->
+        <section id="data-siswa" class="section">
+            <h2 style = text-align:center;vertical-align:middle;>Data Siswa</h2>
+            <div class="card-container">
+                <div class="card" >
+                    <img src="https://via.placeholder.com/80" alt="Foto Siswa 1">
+                    <h3>ACHMAD JAZA'UL AUFAR</h3>
+                    <p><strong>No.Absen:</strong> 01</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 10/06/2006</p>
+                    <p><strong>Alamat:</strong> Dsn.Jamong</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                    
+                </div>
+                <div class="card" >
+                    <img src="foto/al.PNG" alt="Foto Siswa 2">
+                    <h3>AHMAD RIFALDO FIRMANSYAH</h3>
+                    <p><strong>No.Absen:</strong> 02</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 28/07/2006</p>
+                    <p><strong>Alamat:</strong> Jl Karangasem</p>
+                    <p><strong>Kecamatan:</strong> Jenu</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card" >
+                    <img src="foto/mut.PNG" alt="Foto Siswa 3">
+                    <h3>ALFIN MUTMAINNAH</h3>
+                    <p><strong>No.Absen:</strong> 03</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 23/09/2007</p>
+                    <p><strong>Alamat:</strong> DASIN</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/andin.PNG" alt="Foto Siswa 4">
+                    <h3>ANDHINI OKTAVIA SYAFFA AZZAHRA</h3>
+                    <p><strong>No.Absen:</strong> 04</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 28/10/2006</p>
+                    <p><strong>Alamat:</strong> Des.Merkawang</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/gista.PNG" alt="Foto Siswa 5">
+                    <h3>ANGEL GISTA LESTARI</h3>
+                    <p><strong>No.Absen:</strong> 05</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 05/03/2007</p>
+                    <p><strong>Alamat:</strong> Dsn.Karangtawang</p>
+                    <p><strong>Kecamatan:</strong>Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/nisa.PNG" alt="Foto Siswa 6">
+                    <h3>ANISA RAMADHANI FITRIA</h3>
+                    <p><strong>No.Absen:</strong> 06</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 29/09/2006</p>
+                    <p><strong>Alamat:</strong> Tambakboyo</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/80" alt="Foto Siswa 7">
+                    <h3>ASKIYA ULLINUR HANIDA</h3>
+                    <p><strong>No.Absen:</strong> 07</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 29/12/2006</p>
+                    <p><strong>Alamat:</strong> Des.Bogorejo</p>
+                    <p><strong>Kecamatan:</strong> Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/bintang.PNG" alt="Foto Siswa 8">
+                    <h3>BINTANG SETYOWATI</h3>
+                    <p><strong>No.Absen:</strong> 08</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 16/11/2006</p>
+                    <p><strong>Alamat:</strong> Dsn.Socorejo</p>
+                    <p><strong>Kecamatan:</strong>Jenu</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/cindi.PNG" alt="Foto Siswa 9">
+                    <h3>CINDY AULIA FITRIA MAYA SEPTIYASA</h3>
+                    <p><strong>No.Absen:</strong> 09</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 29/06/2007</p>
+                    <p><strong>Alamat:</strong>Jl Dukuh Lemahbang </p>
+                    <p><strong>Kecamatan:</strong> Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/cl.PNG" alt="Foto Siswa 10">
+                    <h3>CLARA APRILIA EFFENDI</h3>
+                    <p><strong>No.Absen:</strong> 10</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 16/04/2007</p>
+                    <p><strong>Alamat:</strong>Des.Belik</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/neli.PNG" alt="Foto Siswa 11">
+                    <h3>CORNELIA AGATHA OKTA PRIANTIK</h3>
+                    <p><strong>No.Absen:</strong> 11</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 31/10/2006</p>
+                    <p><strong>Alamat:</strong> PULO</p>
+                    <p><strong>Kecamatan:</strong>Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/dela.PNG" alt="Foto Siswa 12">
+                    <h3>DELLA INTAN PERMADANI</h3>
+                    <p><strong>No.Absen:</strong> 12</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 01/10/2006</p>
+                    <p><strong>Alamat:</strong> BULUJOWO</p>
+                    <p><strong>Kecamatan:</strong> bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/dn.PNG" alt="Foto Siswa 13">
+                    <h3>DIAN NING RAHAYU</h3>
+                    <p><strong>No.Absen:</strong> 13</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 17/05/2008</p>
+                    <p><strong>Alamat:</strong> Des.Wolutengah</p>
+                    <p><strong>Kecamatan:</strong>Kerek</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/rt.PNG" alt="Foto Siswa 14">
+                    <h3>DIAN RATNA SARI</h3>
+                    <p><strong>No.Absen:</strong> 14</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 28/06/2006</p>
+                    <p><strong>Alamat:</strong> Des.Pulogede</p>
+                    <p><strong>Kecamatan:</strong>Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/dinda.PNG" alt="Foto Siswa 15">
+                    <h3>DINDA PUTRI ALVIA</h3>
+                    <p><strong>No.Absen:</strong> 15</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 01/04/2006</p>
+                    <p><strong>Alamat:</strong> Dsn.Sumberejo</p>
+                    <p><strong>Kecamatan:</strong>Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/ul.PNG" alt="Foto Siswa 16">
+                    <h3>DINNA AMELIA ULFI NURSA ADAH</h3>
+                    <p><strong>No.Absen:</strong> 16</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 22/02/2007</p>
+                    <p><strong>Alamat:</strong>Belikanget </p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/ir.PNG" alt="Foto Siswa 17">
+                    <h3>DWI AHMAD KHOIRIL ANAM</h3>
+                    <p><strong>No.Absen:</strong> 17</p>
+                    <p><strong>Jenis Kelamin:</strong>Laki-Laki</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 21/03/2007</p>
+                    <p><strong>Alamat:</strong>Dsn.Mampon</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/80" alt="Foto Siswa 18">
+                    <h3>FAUZI ALFIN NAJAD</h3>
+                    <p><strong>No.Absen:</strong> 18</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 03/06/2006</p>
+                    <p><strong>Alamat:</strong>Dsn.Sumberarum</p>
+                    <p><strong>Kecamatan:</strong>Kerek</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/fr.PNG" alt="Foto Siswa 19">
+                    <h3>FRISKA WAHYU WIDYANINGTYAS</h3>
+                    <p><strong>No.Absen:</strong> 19</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 25/06/2006</p>
+                    <p><strong>Alamat:</strong> SOCOREJO</p>
+                    <p><strong>Kecamatan:</strong> Jenu</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/hal.PNG" alt="Foto Siswa 20">
+                    <h3>HALIMATUS SADIAH</h3>
+                    <p><strong>No.Absen:</strong> 20</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 29/03/2007</p>
+                    <p><strong>Alamat:</strong> Des.Karangrejo</p>
+                    <p><strong>Kecamatan:</strong>Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/ani.PNG" alt="Foto Siswa 21">
+                    <h3>HANIFAH SEPTIANI</h3>
+                    <p><strong>No.Absen:</strong> 21</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 30/09/2006</p>
+                    <p><strong>Alamat:</strong> Des.Cingklung</p>
+                    <p><strong>Kecamatan:</strong>Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/har.PNG" alt="Foto Siswa 22">
+                    <h3>HARTINI</h3>
+                    <p><strong>No.Absen:</strong> 22</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 10/05/2006</p>
+                    <p><strong>Alamat:</strong>Des.Gemulung</p>
+                    <p><strong>Kecamatan:</strong> Kerek</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/zr.PNG" alt="Foto Siswa 23">
+                    <h3>HAZURA RAHMA FITRI</h3>
+                    <p><strong>No.Absen:</strong> 23</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 20/09/2007</p>
+                    <p><strong>Alamat:</strong> Dsn.Sidorejo</p>
+                    <p><strong>Kecamatan:</strong>Kerek</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/hm.PNG" alt="Foto Siswa 24">
+                    <h3>HIMMATUN ALIYAH</h3>
+                    <p><strong>No.Absen:</strong> 24</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 24/06/2006</p>
+                    <p><strong>Alamat:</strong> Des.Sawir</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/ln.PNG" alt="Foto Siswa 25">
+                    <h3>ILMI CICI MELINA</h3>
+                    <p><strong>No.Absen:</strong> 25</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 26/05/2006</p>
+                    <p><strong>Alamat:</strong> Dsn.Awar-Awar</p>
+                    <p><strong>Kecamatan:</strong>Jenu</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/k.PNG" alt="Foto Siswa 26">
+                    <h3>KENDYKA PRANDANA</h3>
+                    <p><strong>No.Absen:</strong> 26</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 07/06/2007</p>
+                    <p><strong>Alamat:</strong> Des.Pugoh</p>
+                    <p><strong>Kecamatan:</strong>Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/el.PNG" alt="Foto Siswa 27">
+                    <h3>LAELA AYU KURNIA SARI</h3>
+                    <p><strong>No.Absen:</strong> 27</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 27/03/2007</p>
+                    <p><strong>Alamat:</strong> Des.Sidomulyo</p>
+                    <p><strong>Kecamatan:</strong>Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/80" alt="Foto Siswa 28">
+                    <h3>LAILATUM MUNIROH</h3>
+                    <p><strong>No.Absen:</strong> 28</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 01/10/2006</p>
+                    <p><strong>Alamat:</strong> Des.Sidomulyo</p>
+                    <p><strong>Kecamatan:</strong>Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/80" alt="Foto Siswa 29">
+                    <h3>LAILATUS SA'ADAH</h3>
+                    <p><strong>No.Absen:</strong> 29</p>
+                    <p><strong>Jenis Kelamin:</strong>Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 07/02/2007</p>
+                    <p><strong>Alamat:</strong>Des.Klutuk</p>
+                    <p><strong>Kecamatan:</strong> Tambakboyo</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/lr.PNG" alt="Foto Siswa 30">
+                    <h3>LIRIT KARTIKO WATI</h3>
+                    <p><strong>No.Absen:</strong> 30</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 22/07/2006</p>
+                    <p><strong>Alamat:</strong>Dsn.Pereng</p>
+                    <p><strong>Kecamatan:</strong>Jenu</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/dy.PNG" alt="Foto Siswa 31">
+                    <h3>LOVIANA DWI DAYANG SUPRIANI</h3>
+                    <p><strong>No.Absen:</strong> 31</p>
+                    <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 14/03/2007</p>
+                    <p><strong>Alamat:</strong> SOCOREJO</p>
+                    <p><strong>Kecamatan:</strong> Jenu</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+                <div class="card">
+                    <img src="foto/rap.PNG" alt="Foto Siswa 32">
+                    <h3>MUHAMAD RAFFLI ALLAUDIN</h3>
+                    <p><strong>No.Absen:</strong> 32</p>
+                    <p><strong>Jenis Kelamin:</strong> Laki-Laki</p>
+                    <p><strong>Tempat Tanggal Lahir:</strong> Tuban 17/10/2006</p>
+                    <p><strong>Alamat:</strong> Des.Pugoh</p>
+                    <p><strong>Kecamatan:</strong>Bancar</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                </div>
+              
+
+            </div>
+        </section>
+
+        <!-- Data Guru -->
+        <section id="data-guru" class="section">
+          <h2  style = text-align:center;vertical-align:middle;>Data Guru</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="foto/rida.jfif" alt="Foto Guru 1">
+                    <h3>RIDHA NOVITA SARI</h3>
+                    <p><strong>Mata Pelajaran:</strong>Muatan Lokal Bahasa Daerah</p>
+                    <p><strong>NUPTK :</strong>5444772673230202</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                    <p><strong>Kepegawaian :</strong>PPPK</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/80" alt="Foto Guru 2">
+                    <h3>KHOTIBUL UMAM</h3>
+                    <p><strong>Mata Pelajaran:</strong>Project Penguatan Profil Pelajaran Pancasila</p>
+                    <p><strong>NUPTK :</strong>5238764665130183</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                    <p><strong>Kepegawaian :</strong>PPPK</p>
+               </div>
+               <div class="card">
+                <img src="foto/tut.jfif" alt="Foto Guru 1">
+                <h3>TUTIK KARLINA</h3>
+                <p><strong>Mata Pelajaran:</strong> Pendidikan Pancasila</p>
+                <p><strong>NUPTK :</strong>3547770671230232</p>
+                <p><strong>Agama:</strong> Islam</p>
+                <p><strong>Kepegawaian :</strong>PNS</p>
+            </div>
+            <div class="card">
+                <img src="foto/nur.jpeg" alt="Foto Guru 2">
+                <h3>NURUL HAMDIYAH ARIF</h3>
+                <p><strong>Mata Pelajaran:</strong>Bahasa Indonesia</p>
+                <p><strong>NUPTK :</strong>6944761663210132</p>
+                <p><strong>Agama:</strong> Islam</p>
+                <p><strong>Kepegawaian :</strong>PPPK</p>
+           </div>
+           <div class="card">
+               <img src="foto/diin.jpeg" alt="Foto Guru 1">
+               <h3>NURUL MUBTADIIN</h3>
+               <p><strong>Mata Pelajaran:</strong>Pendidikan Agama Islam Dan Budi Pekerti</p>
+               <p><strong>NUPTK :</strong>2536767668130112</p>
+               <p><strong>Agama:</strong> Islam</p>
+               <p><strong>Kepegawaian :</strong>PPPK</p>
+           </div>
+           <div class="card">
+               <img src="foto/nur.jpeg" alt="Foto Guru 2">
+               <h3>NUR MUFIDAH SA</h3>
+               <p><strong>Mata Pelajaran:</strong>Project Kreatif Dan Kewirausahaan</p>
+               <p><strong>NUPTK :</strong>0738763664220012</p>
+               <p><strong>Agama:</strong> Islam</p>
+               <p><strong>Kepegawaian :</strong>PNS</p>
+        </div>
+           <div class="card">
+               <img src="foto/inta.jpeg" alt="Foto Guru 1">
+               <h3>INTAN NUR VARIDA</h3>
+               <p><strong>Mata Pelajaran:</strong> Teknik Komputer Dan Jaringan</p>
+               <p><strong>NUPTK :</strong>8548768670230013</p>
+               <p><strong>Agama:</strong> Islam</p>
+               <p><strong>Kepegawaian :</strong>PNS</p>
+        </div>
+           <div class="card">
+               <img src="foto/ca.jpeg" alt="Foto Guru 2">
+               <h3>CANDRA WULANDARI</h3>
+               <p><strong>Mata Pelajaran:</strong> Matematika(umum)</p>
+               <p><strong>NUPTK :</strong>7336770671130033</p>
+               <p><strong>Agama:</strong> Islam</p>
+               <p><strong>Kepegawaian :</strong>PPPK</p>
+        </div>
+            <div class="card">
+               <img src="foto/at.jpeg" alt="Foto Guru 1">
+               <h3>CRISTIAN SETIA ATIK</h3>
+               <p><strong>Mata Pelajaran:</strong> Teknik Komputer Dan Jaringan</p>
+               <p><strong>NUPTK :</strong>2349766667230063</p>
+               <p><strong>Agama:</strong> Islam</p>
+               <p><strong>Kepegawaian :</strong>PPPK</p>
+        </div>
+            <div class="card">
+              <img src="foto/ben.jpeg" alt="Foto Guru 2">
+              <h3>ENI MAHZUMAH</h3>
+              <p><strong>Mata Pelajaran: </strong>Bahasa Inggris</p>
+              <p><strong>NUPTK :</strong>4541767668130092</p>
+              <p><strong>Agama:</strong> Islam</p>
+              <p><strong>Kepegawaian :</strong>PPPK</p>
+        </div>
+           <div class="card">
+             <img src="foto/la.jpeg" alt="Foto Guru 2">
+             <h3>FARADILA EMMA FIKRISA</h3>
+            <p><strong>Mata Pelajaran:</strong> Teknik Komputer Dan Jaringan</p>
+            <p><strong>NUPTK :</strong>3852773674230092</p>
+            <p><strong>Agama:</strong> Islam</p>
+            <p><strong>Kepegawaian :</strong>PNS</p>
+        </div>
+           <div class="card">
+             <img src="foto/no.jpeg" alt="Foto Guru 1">
+             <h3>NOVITA NUR INAYAH</h3>
+             <p><strong>Mata Pelajaran:</strong>Bimbingan Dan Konseling/Konselor(BP/BK)</p>
+             <p><strong>NUPTK :</strong>7434770671130062</p>
+             <p><strong>Agama:</strong> Islam</p>
+             <p><strong>Kepegawaian :</strong>Honor Daerah TK.I Provinsi</p>
+        </div>
+        <div class="card">
+      <img src="https://via.placeholder.com/80" alt="Foto Guru 2">
+      <h3>KHOTIBUL UMAM</h3>
+     <p><strong>Mata Pelajaran:</strong>Kebekerjaan</p>
+     <p><strong>NUPTK :</strong>5238764665130183</p>
+     <p><strong>Kepegawaian :</strong>PPPK</p>
+     </div>
+    <div class="card">
+      <img src="foto/muk.jpeg" alt="Foto Guru 1">
+      <h3>CHOIRUL MUHLIS</h3>
+      <p><strong>Mata Pelajaran:</strong>  Teknik Komputer Dan Jaringan</p>
+      <p><strong>NUPTK :</strong>9744756658200012</p>
+      <p><strong>Kepegawaian :</strong>PNS</p>
+    </div>
+         </div>
+       </section>
+
+       <section id="struktur-kelas" class="section">
+        <h2 class="section-title">Struktur Kelas</h2>
+        
+        <!-- Kontainer untuk struktur hierarki -->
+        <div class="struktur-container">
+            
+            <!-- Kepala Sekolah (Tingkat Tertinggi) -->
+            <div class="unit-container">
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/gus.png" alt="Kepala Sekolah">
+                    <p class="unit-title">Kepala Sekolah</p>
+                    <p class="unit-name">Sucipto S.Pd., M.M.</p>
+                </div>
+            </div>
+    
+            <!-- Kepala Jurusan dan Wali Kelas sejajar di bawah Kepala Sekolah -->
+            <div class="unit-container">
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/inta.jpeg" alt="Kepala Jurusan">
+                    <p class="unit-title">Kepala Jurusan</p>
+                    <p class="unit-name">Intan Nur Varida</p>
+                </div>
+    
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/la.jpeg" alt="Wali Kelas">
+                    <p class="unit-title">Wali Kelas</p>
+                    <p class="unit-name">Faradila Emma Fikrisa, S.Pd. Gr.</p>
+                </div>
+            </div>
+    
+            <!-- Ketua Kelas dan Wakil Ketua Kelas sejajar -->
+            <div class="unit-container">
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/k.PNG" alt="Ketua Kelas">
+                    <p class="unit-title">Ketua Kelas</p>
+                    <p class="unit-name">Kendyka Pradana</p>
+                </div>
+    
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/fr.PNG" alt="Wakil Ketua Kelas">
+                    <p class="unit-title">Wakil Ketua Kelas</p>
+                    <p class="unit-name">Friska Wahyu Widyaningtyas</p>
+                </div>
+            </div>
+    
+            <!-- Sekretaris dan Wakil Sekretaris sejajar -->
+            <div class="unit-container">
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/lr.PNG" alt="Sekretaris">
+                    <p class="unit-title">Sekretaris</p>
+                    <p class="unit-name">Lirit Kartiko Wati</p>
+                </div>
+    
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/zr.PNG" alt="Wakil Sekretaris">
+                    <p class="unit-title">Wakil Sekretaris</p>
+                    <p class="unit-name">Hazura Rahma Fitri</p>
+                </div>
+            </div>
+    
+            <!-- Bendahara dan Wakil Bendahara sejajar -->
+            <div class="unit-container">
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/ln.PNG" alt="Bendahara">
+                    <p class="unit-title">Bendahara</p>
+                    <p class="unit-name">Ilmi Cici Melina</p>
+                </div>
+    
+                <div class="unit-box">
+                    <img class="unit-photo" src="foto/cl.PNG" alt="Wakil Bendahara">
+                    <p class="unit-title">Wakil Bendahara</p>
+                    <p class="unit-name">Clara Aprilia Effendi</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+        <section id="daftar-piket" class="section">
+            <h2  style = text-align:center;vertical-align:middle;>Daftar Piket</h2>
+            <div style="overflow-x:auto; max-width: 100%; max-height: 400px; overflow-y:auto;">
+                <table style="width: 100%; text-align: left; border-collapse: collapse; font-family: Arial, sans-serif;">
+                    <thead>
+                        <tr style="background-color: #0077b6; color: white;">
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Senin</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Selasa</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Rabu</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Kamis</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">jumat</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Sabtu</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Minggu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f9f9f9;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Alfin Mutmainnah</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Friska Wahyu Widyaningtyas</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Dian Ning Rahayu</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Dian Ratna Sari</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Anisa Ramadhadani Fitria</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Andhini Oktavia Syaffa Azzahra</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Della Intan Permadani</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Cindy Aulia Fitria Maya Septiyasa</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Muhamad Raffi Allaudin</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Hanifah Septiani</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Achmad Jaza'ul Aufar</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Himmatun Aliyah</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Fauzi Alfin Najad</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Hazura Rahma Fitri</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Hartini</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Halimatus Sadiah</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Laela Ayu Kurnia Sari</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Clara Aprilia Effendi</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Ahmad Rifaldo Firmansyah</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Lirit Kartiko Wati</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #ffffff;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Lailatum Muniroh</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Dinda Putri Alvia</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Cornelia Agatha Okta Priantik</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Angel Gita Lestari</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Loviana Dwi Dayang Supriani</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Ilmi Cici Melina</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Kendyka Pradana</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Bintang Setyowati</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Dinna Amelia Ulfi Nursa Adah</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #ffffff;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Dwi Ahmad Khoiril Anam</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">lailatus Sa'adah</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <tr style="background-color: #ffffff;">
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Dwi Ahmad Khoiril Anam</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                                <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                        <tr style="background-color: #ffffff;">
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Jadwal Pelajaran -->
+        <section id="jadwal-pelajaran" class="section">
+            <h2  style = text-align:center;vertical-align:middle;>Jadwal Pelajaran</h2>
+            <div style="overflow-x:auto; max-width: 100%; max-height: 400px; overflow-y:auto;">
+                <table style="width: 100%; text-align: left; border-collapse: collapse; font-family: Arial, sans-serif;">
+                    <thead>
+                        <tr style="background-color: #0077b6; color: white;">
+                            <th style="background-color: #0077b6; color: white; text-align: center; vertical-align: middle;">Hari/Jam</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">07.00-07.40</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">07.40-08.20</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">08.20-09.00</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">09.00-09.40</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">10.00-10.40</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">10.40-11.20</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">11.20-12.00</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">12.30-13.10</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">13.10-13.50</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">13.50-14.30</th>
+                            <th style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">14.30-15.10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f9f9f9;">
+                            <th style="background-color: #0077b6; color: white; text-align: center; vertical-align: middle;">Senin</th>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">Upacara</td>
+                            <td colspan="3" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B1</td>
+                            <td colspan="2" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">A7</td>
+                            <td colspan="2"  style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">A2</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">BK</td>
+                            <td colspan="2" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B2</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <th style="background-color: #0077b6; color: white; text-align: center; vertical-align: middle;">Selasa</th>
+                            <td colspan="5" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B6-TKJ</td>
+                            <td colspan="6" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B6-TKJ</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <th style="background-color: #0077b6; color: white; text-align: center; vertical-align: middle;">Rabu</th>
+                            <td colspan="6" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B6-TKJ</td>
+                            <td colspan="5" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B6-TKJ</td>
+                        </tr>
+                        <tr style="background-color: #f9f9f9;">
+                            <th style="background-color: #0077b6; color: white; text-align: center; vertical-align: middle;">Kamis</th>
+                            <td colspan="3" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">A3</td>
+                            <td colspan="3" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">A1</td>
+                            <td colspan="5" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B7-TKJ</td>
+                        </tr>
+                        <tr style="background-color: #ffffff;">
+                            <th style="background-color: #0077b6; color: white; text-align: center; vertical-align: middle;">Jumat</th>
+                            <td colspan="4" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B8A-TKJ</td>
+                            <td colspan="2" style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">B2</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;text-align: center; vertical-align: middle;">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- Kegiatan Kelas -->
+        <section id="kegiatan-kelas" class="section">
+            <h2  style = text-align:center;vertical-align:middle;>Kegiatan Kelas</h2>
+            <div class="kegiatan-container">
+                <ul>
+                    <li><strong>KUNJUNGAN INDUSTRI DI SEMARANG TAHUN 2024</strong></li>
+                    <li><strong>CLASSMETTING</strong></li>
+                    <li><strong>MAGANG</strong></li> 
+                </ul>
+            </div>
+        </section>
+        
+       <!-- Gallery Foto -->
+<section id="gallery-foto" class="section">
+    <h2 style="text-align: center; vertical-align: middle;">Gallery Foto</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="foto/smk1.jfif" alt="Gallery Foto 1" class="gallery-image">
+            <div class="caption">Jalan Sehat Tema Baju Adat</div>
+        </div>
+        <div class="gallery-item">
+            <img src="foto/smk2.jfif" alt="Gallery Foto 2" class="gallery-image">
+            <div class="caption">Jalan Sehat Tema Baju Adat</div>
+        </div>
+        <div class="gallery-item">
+            <img src="foto/1.PNG" alt="Gallery Foto 3" class="gallery-image">
+            <div class="caption">Maaf Kurang Tau</div>
+        </div>
+        <div class="gallery-item">
+            <img src="foto/2.PNG" alt="Gallery Foto 4" class="gallery-image">
+            <div class="caption">Jalan Sehat Tema Baju Adat</div>
+        </div>
+        <div class="gallery-item">
+            <img src="foto/3.PNG" alt="Gallery Foto 5" class="gallery-image">
+            <div class="caption">Perayaan Ultah Wali Kelas</div>
+        </div>
+    </div>
+</section>
+    </div>
+
+   
+    <script src = "javascript/html.js"></script> </script>
+</body>
+
+</html>
